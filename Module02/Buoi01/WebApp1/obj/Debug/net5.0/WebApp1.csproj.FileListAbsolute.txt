@@ -184,3 +184,8 @@ D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Views\S
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Views\Auth\Password.cshtml.g.cs
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Views\Auth\Reset.cshtml.g.cs
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Views\Auth\SendSuccess.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Access\Create.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Access\Index.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Ajax\Index.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Access\Edit.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Ward\Index.cshtml.g.cs

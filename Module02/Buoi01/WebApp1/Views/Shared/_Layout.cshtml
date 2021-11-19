@@ -32,16 +32,18 @@
         <ul>
             <li><a href="/role">Role</a></li>
             <li><a href="/member">Member</a></li>
+            <li><a href="/dashboard/access">Access</a></li>
+            
+            <li><a href="/dashboard/ajax">Province</a></li>
+            <li><a href="/dashboard/ward">Ward</a></li>
             @if (User.Identity.IsAuthenticated)
             {
-                <li><a href="/auth/logout">Logout</a></li>
-                <li><a href="/auth">Profile</a></li>
-            }
-            else
-            {
-                <li><a href="/auth/register">Register</a></li>
-                <li><a href="/auth/login">Login</a></li>
-            }
+        <li><a href="/auth/logout">Logout</a></li>
+                        <li><a href="/auth">Profile</a></li> }
+                                    else
+                                    {
+                        <li><a href="/auth/register">Register</a></li>
+                                        <li><a href="/auth/login">Login</a></li>            }
 
 
 

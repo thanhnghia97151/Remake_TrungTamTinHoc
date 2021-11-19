@@ -16,7 +16,58 @@ namespace WebApp1.Models
         }
         //Fileds
         public RoleRepository role;
+        public AccessRepository access;
+        public MemberRepository member;
+        public ProvinceRepository province;
+        public DistrictRepository district;
+        public WardRepository ward;
+        public WardRepository Ward
+        {
+            get
+            {
+                if (ward is null)
+                {
+                    ward = new WardRepository(context);
+                }
+                return ward;
+            }
+        }
+        public DistrictRepository District
+        {
+            get
+            {
+                if (district is null)
+                {
+                    district = new DistrictRepository(context);
+                }
+                return district;
+            }
+        }
+        public ProvinceRepository Province 
+        { 
+            get
+            {
+                if (province is null)
+                {
+                    province = new ProvinceRepository(context);
+                }
+                return province;
+            }
+            
+        }
         //properties
+        public AccessRepository Access 
+        { 
+             get
+            {
+                if (access is null)
+                {
+                    access = new AccessRepository(context);
+                }
+                return access;
+            }
+            
+        }
         public RoleRepository Role
         {
             get

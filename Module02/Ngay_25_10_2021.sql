@@ -139,6 +139,16 @@ exec GetRolesByMemberId
 select * from Member
 select * from Role
 select * from MemberInRole
+select * from Access
 
 alter table Member add Token varchar(32)
 select * from Member
+select * from District
+
+drop table Access
+Create table Access(
+	AccessId uniqueidentifier not null primary key default newid(),
+	RoleId uniqueidentifier not null references [Role](RoleId),
+	Url varchar(64) not null
+);
+select * from Ward
