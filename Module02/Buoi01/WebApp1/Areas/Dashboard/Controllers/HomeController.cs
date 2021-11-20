@@ -1,26 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using WebApp1.Controllers;
 using WebApp1.Models;
 
 namespace WebApp1.Areas.Dashboard.Controllers
 {
     [Area("dashboard")]
-    public class HomeController : Controller
+    [Authorize]
+    //[AccessDashboardFilter]
+    [ServiceFilter(typeof(AccessDashboardFilter))]
+    public class HomeController : BaseController
     {
-        MemberRepository memberRepository;
-        RoleRepository roleRepository;
-        MemberInRoleRepository memberInRoleRepository;
-        public HomeController(CSContext context)
-        {
-            memberRepository = new MemberRepository(context);
-            roleRepository = new RoleRepository(context);
-            memberInRoleRepository = new MemberInRoleRepository(context);
-        }
+        public HomeController(SiteProvider provider) : base(provider) { }
         public IActionResult Index()
         {
+            //string userId = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            //List<Access> access = provider.Access.GetAccessesByMemberId(userId);
+            //ViewBag.accesses = access;
             return View();
         }
     }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,11 @@ namespace WebApp1.Models
         {
             context.Accesses.RemoveRange(accesses);
             return context.SaveChanges();
+        }
+        public List<Access> GetAccessesByMemberId(string id)
+        {
+            return context.Accesses.FromSqlRaw("GetAccessesByMemberId @Id", new SqlParameter("@Id", id)).ToList();
+
         }
     }
 }

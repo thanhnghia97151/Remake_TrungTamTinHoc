@@ -12,6 +12,7 @@ using WebApp1.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Data.Sql;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using WebApp1.Areas.Dashboard.Controllers;
 
 namespace WebApp1
 {
@@ -42,8 +43,11 @@ namespace WebApp1
                 p.ExpireTimeSpan = TimeSpan.FromDays(60);
                 p.Cookie.Name = "cse.net.vn";
             });
+            //services.AddScoped(p => new SiteProvider(configuration));
             services.AddScoped(p => new SiteProvider(p.GetService<CSContext>()));
             services.AddDbContext<CSContext>(p => p.UseSqlServer(configuration.GetConnectionString("CS")));
+            services.AddScoped(p => new AccessDashboardFilter(p.GetService<SiteProvider>()));
+
         }
 
 

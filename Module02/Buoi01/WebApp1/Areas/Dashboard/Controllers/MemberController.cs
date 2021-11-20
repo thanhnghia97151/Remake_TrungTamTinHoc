@@ -8,6 +8,7 @@ using WebApp1.Models;
 namespace WebApp1.Areas.Dashboard.Controllers
 {
     [Area("dashboard")]
+    [ServiceFilter(typeof(AccessDashboardFilter))]
     public class MemberController : Controller
     {
         MemberInRoleRepository memberInRoleRepository;

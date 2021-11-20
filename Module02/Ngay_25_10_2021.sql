@@ -145,10 +145,21 @@ alter table Member add Token varchar(32)
 select * from Member
 select * from District
 
-drop table Access
+--drop table Access; 
+go
 Create table Access(
 	AccessId uniqueidentifier not null primary key default newid(),
+	AcessName nvarchar(32) not null,
 	RoleId uniqueidentifier not null references [Role](RoleId),
 	Url varchar(64) not null
 );
 select * from Ward
+
+drop proc GetAccessesByMemberId;
+create proc GetAccessesByMemberId(@Id char(32))
+as
+	select Access.* from Access join MemberInRole on Access.RoleId = MemberInRole.RoleId
+	and IsDeleted = 0 and MemberId = @Id
+go
+select * from Member
+exec GetAccessesByMemberId @Id = 'zjzej8jfncj8rlxmxmuf5uj64b7sbj89'
