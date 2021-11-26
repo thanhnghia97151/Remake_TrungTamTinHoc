@@ -30,21 +30,29 @@
     </head>
     <body>
         <ul>
+            <li><a href="/dashboard/excel/autocomplete">Autocomplete</a></li>
+            <li><a href="/dashboard/excel/datatable">DataTable</a></li>
+            <li><a href="/dashboard/excel/lazyload">Lazy</a></li>
+            <li><a href="/dashboard/excel/find">Find</a></li>
+            <li><a href="/dashboard/excel/loadmore">Load more</a></li>
             <li><a href="/dashboard">Dashboard</a></li>
             <li><a href="/role">Role</a></li>
             <li><a href="/member">Member</a></li>
             <li><a href="/dashboard/access">Access</a></li>
-            
+            <li><a href="/dashboard/excel">Excel</a></li>
+            <li><a href="/dashboard/ajax">Ajax</a></li>
             <li><a href="/dashboard/ajax">Province</a></li>
             <li><a href="/dashboard/ward">Ward</a></li>
             @if (User.Identity.IsAuthenticated)
             {
         <li><a href="/auth/logout">Logout</a></li>
-                        <li><a href="/auth">Profile</a></li> }
-                                    else
-                                    {
-                        <li><a href="/auth/register">Register</a></li>
-                                        <li><a href="/auth/login">Login</a></li>            }
+                        <li><a href="/auth">Profile</a></li>
+ }
+                    else
+                    {
+        <li><a href="/auth/register">Register</a></li>
+                        <li><a href="/auth/login">Login</a></li>
+}
 
 
 

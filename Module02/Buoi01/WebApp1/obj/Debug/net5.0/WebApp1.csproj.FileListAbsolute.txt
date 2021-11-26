@@ -189,3 +189,13 @@ D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\D
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Ajax\Index.cshtml.g.cs
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Access\Edit.cshtml.g.cs
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Ward\Index.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Index.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Upload.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Search.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\LoadMore.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\_Superstore.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Find.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\_ViewImports.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Datatable.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\LazyLoad.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Autocomplete.cshtml.g.cs

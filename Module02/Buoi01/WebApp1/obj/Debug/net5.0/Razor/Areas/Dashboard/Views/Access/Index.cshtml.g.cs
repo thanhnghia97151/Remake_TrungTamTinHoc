@@ -12,14 +12,47 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 2 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\_ViewImports.cshtml"
+using WebApp1.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"469cb165f78701b481385936b8ee0ca6a3afbdff", @"/Areas/Dashboard/Views/Access/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a3b88d4eee74e5e5ee30f1386c0484a7440d3c48", @"/Areas/Dashboard/Views/_ViewImports.cshtml")]
     public class Areas_Dashboard_Views_Access_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<WebApp1.Models.Access>>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("/dashboard/access/deletemany"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        #pragma warning restore 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-            WriteLiteral(@"<a href=""/dashboard/access/create"" class=""btn btn-primary"">Create</a>
-<form action=""/dashboard/access/deletemany"" method=""post"">
+            WriteLiteral("<a href=\"/dashboard/access/create\" class=\"btn btn-primary\">Create</a>\r\n");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "469cb165f78701b481385936b8ee0ca6a3afbdff3900", async() => {
+                WriteLiteral(@"
     <table class=""table table-bordered"">
         <thead class=""table-dark"">
             <tr>
@@ -43,8 +76,8 @@ namespace AspNetCore
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("                <tr>\r\n                    <td>\r\n                        <input type=\"checkbox\" name=\"ids\"");
-            BeginWriteAttribute("value", " value=\"", 721, "\"", 737, 1);
+                WriteLiteral("                <tr>\r\n                    <td>\r\n                        <input type=\"checkbox\" name=\"ids\"");
+                BeginWriteAttribute("value", " value=\"", 721, "\"", 737, 1);
 #nullable restore
 #line 22 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
 WriteAttributeValue("", 729, item.Id, 729, 8, false);
@@ -52,8 +85,8 @@ WriteAttributeValue("", 729, item.Id, 729, 8, false);
 #line default
 #line hidden
 #nullable disable
-            EndWriteAttribute();
-            WriteLiteral("/>\r\n                    </td>\r\n                    <td>");
+                EndWriteAttribute();
+                WriteLiteral("/>\r\n                    </td>\r\n                    <td>");
 #nullable restore
 #line 24 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
                    Write(item.Id);
@@ -61,7 +94,7 @@ WriteAttributeValue("", 729, item.Id, 729, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("</td>\r\n                    <td>");
+                WriteLiteral("</td>\r\n                    <td>");
 #nullable restore
 #line 25 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
                    Write(item.Name);
@@ -69,7 +102,7 @@ WriteAttributeValue("", 729, item.Id, 729, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("</td>\r\n                    <td>");
+                WriteLiteral("</td>\r\n                    <td>");
 #nullable restore
 #line 26 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
                    Write(item.Role.Name);
@@ -77,7 +110,7 @@ WriteAttributeValue("", 729, item.Id, 729, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("</td>\r\n                    <td>");
+                WriteLiteral("</td>\r\n                    <td>");
 #nullable restore
 #line 27 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
                    Write(item.Url);
@@ -85,9 +118,9 @@ WriteAttributeValue("", 729, item.Id, 729, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("</td>\r\n                    <td>\r\n                        <a");
-            BeginWriteAttribute("href", " href=\"", 987, "\"", 1025, 2);
-            WriteAttributeValue("", 994, "/dashboard/access/edit/", 994, 23, true);
+                WriteLiteral("</td>\r\n                    <td>\r\n                        <a");
+                BeginWriteAttribute("href", " href=\"", 987, "\"", 1025, 2);
+                WriteAttributeValue("", 994, "/dashboard/access/edit/", 994, 23, true);
 #nullable restore
 #line 29 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
 WriteAttributeValue("", 1017, item.Id, 1017, 8, false);
@@ -95,8 +128,8 @@ WriteAttributeValue("", 1017, item.Id, 1017, 8, false);
 #line default
 #line hidden
 #nullable disable
-            EndWriteAttribute();
-            WriteLiteral(">\r\n                            <i class=\"fa fa-edit\"></i>\r\n                        </a>\r\n                    </td>\r\n                </tr>\r\n");
+                EndWriteAttribute();
+                WriteLiteral(">\r\n                            <i class=\"fa fa-edit\"></i>\r\n                        </a>\r\n                    </td>\r\n                </tr>\r\n");
 #nullable restore
 #line 34 "D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\Areas\Dashboard\Views\Access\Index.cshtml"
             }
@@ -104,7 +137,24 @@ WriteAttributeValue("", 1017, item.Id, 1017, 8, false);
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("        </tbody>\r\n    </table>\r\n\r\n</form>\r\n\r\n");
+                WriteLiteral("        </tbody>\r\n    </table>\r\n\r\n");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper.Method = (string)__tagHelperAttribute_1.Value;
+            __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_1);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n\r\n");
         }
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

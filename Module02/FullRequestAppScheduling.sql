@@ -163,3 +163,52 @@ as
 go
 select * from Member
 exec GetAccessesByMemberId @Id = 'zjzej8jfncj8rlxmxmuf5uj64b7sbj89'
+
+
+drop table Superstore;
+create table Superstore
+(
+	RowId int not null primary key,
+	OrderId nvarchar(100),
+	OrderDate datetime,
+	ShipDate datetime,
+	ShipMode nvarchar(100),
+	CustomerId nvarchar(100),
+	CustomerName nvarchar(100),
+	Segment nvarchar(100),
+	Country nvarchar(100),
+	City nvarchar(100),
+	State nvarchar(100),
+	PostalCode nvarchar(100),
+	Region nvarchar(100),
+	ProductId nvarchar(100),
+	Category nvarchar(100),
+	SubCategory nvarchar(100),
+	ProductName nvarchar(1000),
+	Sales decimal(10,2),
+	Quantity int,
+	Discount decimal(10,2),
+	Profit decimal(10,2)
+)
+select * from Superstore
+/*public int RowId { get; set; }
+        public string OrderId { get; set; }
+        public DateTime OrderDate { get; set; }
+        public DateTime ShipDate { get; set; }
+        public string ShipMode { get; set; }
+        public string CustomerId { get; set; }
+        public string CustomerName { get; set; }
+        public string Segment { get; set; }
+        public string Country { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        //public string PostalCode { get; set; }
+        public string Region { get; set; }
+        public string ProductId { get; set; }
+        public string Category { get; set; }
+        public string SubCategory { get; set; }
+        public string ProductName { get; set; }
+        public double Sales { get; set; }
+        public int Quantity { get; set; }
+        public double Discount { get; set; }
+        public double Profit { get; set; }*/

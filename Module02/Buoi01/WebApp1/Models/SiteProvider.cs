@@ -21,6 +21,18 @@ namespace WebApp1.Models
         public ProvinceRepository province;
         public DistrictRepository district;
         public WardRepository ward;
+        public SuperstoreRepository superstore;
+        public SuperstoreRepository Superstore
+        {
+            get
+            {
+                if (superstore == null)
+                {
+                    superstore = new SuperstoreRepository(context);
+                }
+                return superstore;
+            }
+        }
         public WardRepository Ward
         {
             get
