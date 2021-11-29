@@ -22,6 +22,21 @@ namespace WebApp1.Models
         public DistrictRepository district;
         public WardRepository ward;
         public SuperstoreRepository superstore;
+        public ImageRepository image;
+
+        public ImageRepository Image
+        {
+            get
+            {
+                if (image==null)
+                {
+                    image = new ImageRepository(context);
+                }
+                return image;
+                
+            }
+        }
+
         public SuperstoreRepository Superstore
         {
             get

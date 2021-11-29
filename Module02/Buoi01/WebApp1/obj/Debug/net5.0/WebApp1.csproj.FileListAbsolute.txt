@@ -199,3 +199,7 @@ D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\D
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Datatable.cshtml.g.cs
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\LazyLoad.cshtml.g.cs
 D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Excel\Autocomplete.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Image\Index.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Image\Create.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Image\Multiple.cshtml.g.cs
+D:\TrungTamTinHoc_DHKH-TN\Module02\Buoi01\WebApp1\obj\Debug\net5.0\Razor\Areas\Dashboard\Views\Image\Icon.cshtml.g.cs

@@ -212,3 +212,13 @@ select * from Superstore
         public int Quantity { get; set; }
         public double Discount { get; set; }
         public double Profit { get; set; }*/
+drop table Image
+create table Image
+(
+		ImageId uniqueidentifier not null primary key,
+		ImageOriginal nvarchar(64) not null,
+		ImageUrl nvarchar(64) not null,
+		ImageType nvarchar(32) not null,
+		ImageSize bigint not null
+)
+select * from Image
