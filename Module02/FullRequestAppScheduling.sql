@@ -222,3 +222,11 @@ create table Image
 		ImageSize bigint not null
 )
 select * from Image
+
+create table Category
+(
+	CategoryId int not null primary key identity(1,1),
+	CategoryName nvarchar(64) not null,
+	ParentId int references Category(CategoryId)
+)
+

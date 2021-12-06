@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using WebApp1.Controllers;
 using WebApp1.Models;
@@ -14,6 +15,32 @@ namespace WebApp1.Areas.Dashboard.Controllers
     public class ImageController : BaseController
     {
         public ImageController(SiteProvider provider) : base(provider) { }
+        
+        public IActionResult WebUrl()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult WebUrl(string url)
+        {
+            string extension = Path.GetExtension(url);
+            string imageUrl = Helper.Helper.RandomString(32 - extension.Length) + extension;
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", imageUrl);
+            using(WebClient client = new WebClient())
+            {
+                client.DownloadFile(url, path);
+            }
+            Image image = new Image
+            {
+                Id = Guid.NewGuid(),
+                Original = Path.GetFileName(url),
+                Size = 0,
+                Type = extension,
+                Url = imageUrl
+            };
+            provider.Image.Add(image);
+            return Redirect("/dashboard/image");
+        }
         public IActionResult Index()
         {
             return View(provider.Image.GetImages());

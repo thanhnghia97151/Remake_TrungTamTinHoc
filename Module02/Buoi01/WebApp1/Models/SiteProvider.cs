@@ -23,7 +23,18 @@ namespace WebApp1.Models
         public WardRepository ward;
         public SuperstoreRepository superstore;
         public ImageRepository image;
-
+        public CategoryRepository category;
+        public CategoryRepository Category
+        {
+            get
+            {
+                if (category == null)
+                {
+                    category = new CategoryRepository(context);
+                }
+                return category;
+            }
+        }
         public ImageRepository Image
         {
             get

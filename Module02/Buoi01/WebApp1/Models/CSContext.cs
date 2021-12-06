@@ -32,6 +32,7 @@ namespace WebApp1.Models
         public DbSet<Ward> Wards { get; set; }
         public DbSet<Superstore> Superstores { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<Category> Categories { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
